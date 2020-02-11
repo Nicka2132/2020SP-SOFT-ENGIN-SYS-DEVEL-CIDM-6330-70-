@@ -1,0 +1,37 @@
+from selenium import webdriver
+
+browser = webdriver.Firefox()
+browser.get('http://localhost:8000')
+
+assert 'Django' in browser.title
+
+python functional_tests.py
+
+django-admin.py startproject superlists 
+
+python manage.py runserver
+
+python functional_tests.py
+
+ls
+
+git init
+
+ls
+
+echo "db.sqlite3" >> .gitignore
+echo "geckodriver.log" >> .gitignore
+echo "virtualenv" >> .gitignore
+
+git add .
+git status
+
+git rm -r --cached superlists/__pycache__
+
+echo "__pycache__" >> .gitignore
+echo "*.pyc" >> .gitignore
+
+git status
+
+git add .gitignore
+git commit
